@@ -10,6 +10,7 @@ namespace Generic
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to Generic programs");
         }
     }
 }
