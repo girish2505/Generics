@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Generic
 {
-    class MaxOfThreeNumbers
+    public class MaxOfThreeNumbers
     {
         public int MaxOfThree(int num1, int num2, int num3)
         {

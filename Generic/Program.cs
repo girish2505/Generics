@@ -11,6 +11,9 @@ namespace Generic
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Generic programs");
+            MaxOfThreeNumbers maxOfThreeNumbers = new MaxOfThreeNumbers();
+            maxOfThreeNumbers.MaxOfThree(10,20,30);
+
         }
     }
 }
