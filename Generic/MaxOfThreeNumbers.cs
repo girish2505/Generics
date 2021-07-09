@@ -6,22 +6,27 @@ using System.Threading.Tasks;
 
 namespace Generic
 {
-    public class MaxOfThreeNumbers
+    public class MaxOfThreeNumbers<T> where T : IComparable
     {
-        public int MaxOfThree(int num1, int num2, int num3)
+        public T[] array;
+        public MaxOfThreeNumbers(T[] array)
         {
-            if (num1.CompareTo(num2) > 0 && num1.CompareTo(num3) > 0)
-            {
-                return num1;
-            }
-            else if (num2.CompareTo(num1) > 0 && num2.CompareTo(num3) > 0)
-            {
-                return num2;
-            }
-            else
-            {
-                return num3;
-            }
+            this.array = array;
+        }
+        public T[] Sort(T[] values)
+        {
+            Array.Sort(values);
+            return array;
+        }
+        public T FindingMaxValue(T[] value)
+        {
+            T[] sorted = this.Sort(value);
+            return sorted[sorted.Length - 1];
+        }
+        public T MaxValue()
+        {
+            T max = FindingMaxValue(this.array);
+            return max;
         }
     }
 }
