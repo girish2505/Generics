@@ -28,5 +28,10 @@ namespace Generic
             T max = FindingMaxValue(this.array);
             return max;
         }
+        public void PrintMax()
+        {
+            T result = MaxValue();
+            Console.WriteLine($"Maximum value is {result}");
+        }
     }
 }

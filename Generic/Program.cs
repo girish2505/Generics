@@ -19,9 +19,9 @@ namespace Generic
             MaxOfThreeNumbers<float> findForFloat = new MaxOfThreeNumbers<float>(floatArray);
             MaxOfThreeNumbers<string> findForString = new MaxOfThreeNumbers<string>(stringArray);
 
-            Console.WriteLine("Maximum Integer Number : " + findForInt.MaxValue());
-            Console.WriteLine("Maximum Float Number : " + findForFloat.MaxValue());
-            Console.WriteLine("Maximum String : " + findForString.MaxValue());
+            findForInt.PrintMax();
+            findForFloat.PrintMax();
+            findForString.PrintMax();
             Console.Read();
         }
     }
